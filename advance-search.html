@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advance Search</title>
+        <link rel="stylesheet" href="project-style.css">
+    </head>
+
+    <body>
+        <div id="Links-Container">
+            <a href="image-search.html">Image</a>
+            <a href="index.html">Home</a>
+        </div>
+
+        <p id="Advance-Search-Text">Advance Search</p>
+        <div style="border-bottom: 1px solid #ebebeb;"></div>
+
+        <div id="Advance-Filters">
+            
+            <form action="https://www.google.com/search?">
+                <div id="Find-Pages-With">
+                    <div class="A-Flex-Container">
+                        <span class="Advance-Headings">Find pages with...</span>
+                        <span id="A-F-D-H">To do this in the search box.</span>
+                    </div>
+
+                    <div>
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">all these words : </label>
+                            
+                            <div class="A-S">
+                                <input class="A-Search-Box" type="text" name="as_q">
+                            </div>
+                            
+                            <div class="Filter-Description"> 
+                                Type the important words: <span class="Filter-Example">Struggling CSS</span>
+                            </div>
+                        </div>
+                        
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">this exact word or phrase: : </label>
+                            
+                            <div class="A-S">
+                                <input class="A-Search-Box" type="text" name="as_epq">
+                            </div>
+                            
+                            <div class="Filter-Description"> 
+                                Put exact words in quotes: <span class="Filter-Example">"I really need practice."</span>
+                            </div>
+                        </div>
+                        
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">any of these words: </label>
+                            
+                            <div class="A-S">
+                                <input class="A-Search-Box" type="text" name="as_oq">
+                            </div>
+                            
+                            <div class="Filter-Description"> 
+                                Type <span class="Filter-Example">OR</span> between all the words you want: <span class="Filter-Example">learning OR tired</span>
+                            </div>
+                        </div>
+                        
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">none of these words: </label>
+                            
+                            <div class="A-S">
+                                <input class="A-Search-Box" type="text" name="as_eq">
+                            </div>
+                            
+                            <div class="Filter-Description"> 
+                                Put a minus sign just before words that you don't want: <span class="Filter-Example">-"give up", -quit </span>
+                            </div>
+                        </div>
+                        
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">numbers ranging from: </label>
+                            
+                            <div class="A-S">
+                                <div id="number-filter">
+                                    <input class="A-Search-Box" style="width: 45%;" type="text" name="as_nlo">
+                                    <span style="font-size: 13px; color:#e8e8e8; width: 10%; text-align: center;">To</span>
+                                    <input class="A-Search-Box" style="width: 45%;" type="text" name="as_nhi">
+                                    <input style="display: none;" type="submit">
+                                </div>
+                            </div>
+                            
+                            <div class="Filter-Description"> 
+                                Put two full stops between the numbers and add a unit of measurement:s <span class="Filter-Example">10..35 kg, £300..£500, 2010..2011</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="border-bottom: 1px solid #ebebeb; width: 72%; margin: 18px 0 18px 0;"></div>
+
+                <div id="Narrow-Results">
+                    <div class="A-Flex-Container">
+                        <span class="Advance-Headings">Then narrow your results by...</span>
+                    </div>
+
+                    <div>
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">language: </label>
+
+                            <div class="A-S">
+                                <select class="A-Search-Box" name="lr">
+                                    <option value="">any language
+                                    </option>
+
+                                    <option value="lang_af">Afrikaans
+                                    </option>
+                                    
+                                    <option value="lang_ar">Arabic
+                                    </option>
+
+                                    <option value="lang_hy">Amenian
+                                    </option>
+
+                                    <option value="lang_be">Belarusian
+                                    </option>
+                                    
+                                    <option value="lang_bg">Bulgarian
+                                    </option>
+
+                                    <option value="lang_ca">Catalan
+                                    </option>
+
+                                    <option value="lang_zh-CN">Chinese (Simplified)
+                                    </option>
+                                    
+                                    <option value="lang_zh-TW">Chinese (Traditional)
+                                    </option>
+
+                                    <option value="lang_hr">Croatian
+                                    </option>
+
+                                    <option value="lang_cs">Czech
+                                    </option>
+
+                                    <option value="lang_da">Danish
+                                    </option>
+                                    
+                                    <option value="lang_nl">Dutch
+                                    </option>
+
+                                    <option value="lang_en">English
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="Filter-Description"> 
+                                Find pages in the language that you select.
+                            </div>
+                        </div>
+
+
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">region: </label>
+
+                            <div class="A-S">
+                                <select class="A-Search-Box" id="Filter-Dropdown" name="cr">
+                                    <option value="">any region
+                                    </option>
+
+                                    <option value="countryAF">Afrikaans
+                                    </option>
+
+                                    <option value="countryAL">Albania
+                                    </option>
+
+                                    <option value="countryDZ">Algeria
+                                    </option>
+
+                                    <option value="countryAS">American Samoa
+                                    </option>
+
+                                    <option value="countryAD">Andorra
+                                    </option>
+
+                                    <option value="countryAO">Angola
+                                    </option>
+
+                                    <option value="countryAI">Anguilla
+                                    </option>
+
+                                    <option value="countryAQ">Antarctica
+                                    </option>
+
+                                    <option value="countryAG">Antigua & Barbuda
+                                    </option>
+
+                                    <option value="countryAR">Argentina
+                                    </option>
+
+                                    <option value="countryAM">Armenia
+                                    </option>
+
+                                    <option value="countryAW">Aruba
+                                    </option>
+
+                                    <option value="countryAU">Australia
+                                    </option>
+
+                                    <option value="countryAT">Austria
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="Filter-Description"> 
+                                Find pages published in a particular region.
+                            </div>
+                        </div>
+
+
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">last update: </label>
+
+                            <div class="A-S">
+                                <select class="A-Search-Box" id="Filter-Dropdown" name="as_qdr">
+                                    <option value="all">any time
+                                    </option>
+
+                                    <option value="d">past 24 hours
+                                    </option>
+
+                                    <option value="w">past week
+                                    </option>
+
+                                    <option value="m">past month
+                                    </option>
+
+                                    <option value="y">past year
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="Filter-Description"> 
+                                Find pages updated within the time that you specify.
+                            </div>
+                        </div>
+
+
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">site or domain: </label>
+                            
+                            <div class="A-S">
+                                <input class="A-Search-Box" type="text" name="as_sitesearch">
+                            </div>
+                            
+                            <div class="Filter-Description"> 
+                                Search one site &#40;like <span class="Filter-Example"> wikipedia.org </span>&#41; or limit your results to a domain like <span class="Filter-Example">.edu, .org</span> or <span class="Filter-Example">.gov</span> 
+                            </div>
+                        </div>
+
+
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">terms appearing: </label>
+
+                            <div class="A-S">
+                                <select class="A-Search-Box" id="Filter-Dropdown" name="as_occt">
+                                    <option value="any">anywhere in the page
+                                    </option>
+
+                                    <option value="title">in the title of the page
+                                    </option>
+
+                                    <option value="body">in the text of the page
+                                    </option>
+
+                                    <option value="url">in the URL of the page
+                                    </option>
+
+                                    <option value="links">in the links of the page
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="Filter-Description"> 
+                                Search for terms in the whole page, page title or web address, or links to the page you're looking for.
+                            </div>
+                        </div>
+
+
+                        <div class="Actual-Filters">
+                            <label class="Filter-Titles">file type: </label>
+
+                            <div class="A-S">
+                                <select class="A-Search-Box" id="Filter-Dropdown" name="as_filetype">
+                                    <option value="">any format
+                                    </option>
+
+                                    <option value="pdf">Adobe Acrobat PDF (.pdf)
+                                    </option>
+
+                                    <option value="ps">Adobe Postscript (.ps)
+                                    </option>
+
+                                    <option value="dwf">Autodesk DWF (.dwf)
+                                    </option>
+
+                                    <option value="kml">Google Earth KML (.kml)
+                                    </option>
+
+                                    <option value="kmz">Google Earth KMZ (.kmz)
+                                    </option>
+
+                                    <option value="xls">Microsoft Excel (.xls)
+                                    </option>
+
+                                    <option value="ppt">Microsoft PowerPoint (.ppt)
+                                    </option>
+
+                                    <option value="doc">Microsoft Word (.doc)
+                                    </option>
+
+                                    <option value="rtf">Rich Text Format (.rtf)
+                                    </option>
+
+                                    <option value="swf">Shockwaveflash (.swf)
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="Filter-Description"> 
+                                Find pages in the format that you prefer.
+                            </div>
+                        </div>
+
+
+                        <div class="Actual-Filters">
+                            <a class="Filter-Titles" id="a-overide" href="https://support.google.com/websearch/answer/29508?hl=en&visit_id=638987933007745423-2616550789&p=ws_images_usagerights&rd=1">usage rights: </a>
+
+                            <div class="A-S">
+                                <select class="A-Search-Box" id="Filter-Dropdown" name="tbs">
+                                    <option value="">not filtered by license
+                                    </option>
+
+                                    <option value="sur:f">free to use or share
+                                    </option>
+
+                                    <option value="sur:fc">free to use or share, even commercially
+                                    </option>
+
+                                    <option value="sur:fm">free to use or modify
+                                    </option>
+
+                                    <option value="sur:fmc">free to use, share or modify, even commercially
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="Filter-Description"> 
+                                Find pages that you are free to use yourself.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="a-submit-align"><input type="submit" id="a-submit" value="Advanced Search"></div>
+
+                <div style="border-bottom: 1px solid #ebebeb; width: 72%; margin: 18px 0 18px 0;"></div>
+            </form>
+        </div>
+    </body>
+</html>
