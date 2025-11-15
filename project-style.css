@@ -29,6 +29,7 @@ a:hover{
 #search{
     text-align: center;
     width: 100%;
+    min-width: 200px;
     margin-top: 12.5em;
 }
 
@@ -119,6 +120,7 @@ h1{
 
 .Filter-Titles{
     width: 12%;
+    min-width: 150px;
     height: 42px;
     margin: 2px 0 2px 0;
     padding: 5px 0 5px 0;
@@ -136,6 +138,7 @@ h1{
 
 .A-Search-Box{
     width: 100%;
+    min-width: 150px;
     max-width: 554px;
     margin: 2px 0 2px 0;
     padding: 0;
@@ -224,4 +227,5 @@ h1{
 #a-submit-align{
     width: 47%;
     text-align: right;
+
 }
