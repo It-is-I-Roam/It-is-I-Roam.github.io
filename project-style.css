@@ -102,6 +102,7 @@ h1{
 
 .Advance-Headings{
     width: 13%;
+    min-width: 150px;
     font-size: 16px;
     height: 42px;
 }
