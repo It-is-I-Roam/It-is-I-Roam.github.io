@@ -39,15 +39,17 @@ a:hover{
 }
 
 .NI{
-    width: 800px;
+    width: 50%;
+    min-width: 300px;
     height: 2em;
     margin-bottom: 10px;
     border: 0;
     border-radius: 50px;
-    padding-left: 2.5em;
+    padding: 0;
     font-size: 20px;
     background-color: #4C5156;
     color: rgb(207, 207, 207);
+    text-indent: 2.5em;
 }
 
 .NI:focus,
@@ -229,3 +231,4 @@ h1{
     text-align: right;
 
 }
+
